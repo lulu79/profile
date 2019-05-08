@@ -1,10 +1,25 @@
 body {
-  background-color: #f3f9fb;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  margin: auto;
+ margin: 0;
+ padding: 0;
+ font-family: "montserrat";
+ background-image: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+ background-size: 400% 400%;
+ animation: bganimation 15s infinite;
 }
+
+@keyframes bganimation {
+ 0% {
+  background-position: 0% 50%;
+ }
+
+ 50% {
+  background-position: 100% 50%;
+ }
+
+ 100% {
+  background-position: 0% 50%;
+ }
+}﻿
 
 h1 {
   color: #113f67;
@@ -46,12 +61,14 @@ li{
   width: auto;
 }
 .card{
+  background-color: white;
   width: 550px;   /* This sets the width */
   margin: auto;
   margin-top: 50px;
   padding: 20px;
-  box-shadow: 10px 5px 15px grey;
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 
 .infos{
@@ -64,13 +81,15 @@ li{
 .networks {
   display: flex;
   flex-direction: column;
-  background-color: #113f67;
   padding: 10px;
-  height: 200px;
+  height: 100px;
   width: auto;
   justify-content: center;
   margin: auto;
   margin-top: 30px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 
 .list {
@@ -87,6 +106,7 @@ li{
   /* For a screen < 720px, this CSS will be read */
 
   .card{
+    background-color: white;
     width: auto;   /* This sets the width */
     margin: auto;
     margin-top: 50px;
@@ -105,6 +125,7 @@ li{
   /* For a screen < 540px, this CSS will be read */
 
   .card{
+    background-color: white;
     width: auto;   /* This sets the width */
     margin: auto;
     margin-top: 50px;
